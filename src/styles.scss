@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300&display=swap');
+
+body {
+    background-color: rgb(123, 224, 123);
+    font-family: poppins;
+    font-weight: 700;
+
+}
+
+.detalhes {
+    font-size: 0.9rem;
+}
+
+
+.sombra {
+    box-shadow: 2px 2px 2px 2px rgba(78, 78, 78, 0.238);
+}

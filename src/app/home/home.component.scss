@@ -1,21 +1,25 @@
-.scrollHorizontal {
-    background-color: red;
-    height: 25vh;
-    margin: 0% 0% 8% 0%;
-}
-
-.acessos {
-    background-color: rgb(114, 174, 148);
-    height: 15vh;
-    margin: 0% 0% 3% 0%;
+.checkItem {
+    height: 20%;
+    display: flex;
+    overflow-x: scroll;
 }
 
 .cards {
-    height: 50vh;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
     overflow-y: scroll;
 }
 
 
 .cardItem {
     padding: 3%;
+}
+
+.acessos {
+    height: 80px;
+    display: flex;
+    margin: 0% 0% 0% 0%;
+    justify-content: space-around;
+    align-items: center;
 }
