@@ -9,9 +9,10 @@ export class HomeComponent implements OnInit {
 
   public constructor() { }
 
+  public BotaoMenu: string = "➕ Jia"
 
   ngOnInit(): void {
-    console.log('iniciado Home');
+
 
   }
 

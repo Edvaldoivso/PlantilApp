@@ -1,12 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-botao',
   templateUrl: './botao.component.html',
   styleUrls: ['./botao.component.scss']
 })
-export class BotaoComponent {
+export class BotaoComponent implements OnInit {
 
-  public tituloBotao: string = '➕ Jia'
+  @Input() tituloBotao: string = ''
+  @Input() IconeBotao: string = ''
+
+  public constructor() { }
+
+
+  ngOnInit(): void {
+    console.log('iniciado Botão');
+
+  }
 
 }

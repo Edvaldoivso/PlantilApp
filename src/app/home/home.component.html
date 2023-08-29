@@ -11,17 +11,17 @@
     </div>
 
     <div class="acessos">
-        <app-botao></app-botao>
-        <app-botao></app-botao>
+        <app-botao [tituloBotao]="BotaoMenu"></app-botao>
+        <app-botao [tituloBotao]="'Titulo'"></app-botao>
 
     </div>
 
     <div class="cards">
 
-        <app-card class="cardItem"></app-card>
-        <app-card class="cardItem"></app-card>
-        <app-card class="cardItem"></app-card>
-        <app-card class="cardItem"></app-card>
+        <app-card class="cardItem" [tipoCard]="'tempo'"></app-card>
+        <app-card class="cardItem" [tipoCard]="'saude'"></app-card>
+        <app-card class="cardItem" [tipoCard]="''"></app-card>
+        <app-card class="cardItem" [tipoCard]="''"></app-card>
     </div>
 
 </div>

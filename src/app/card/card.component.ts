@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -16,10 +16,29 @@ export class CardComponent implements OnInit {
 
   public constructor() { }
 
+  @Input() tipoCard: string = ''
 
   ngOnInit(): void {
     console.log('iniciado Card');
+    this.iniciaCard();
 
+  }
+
+  iniciaCard() {
+    switch (this.tipoCard) {
+      case 'tempo':
+        console.log('Tempo')
+        this.tituloCard = 'Tempo'
+        break;
+      case 'saude':
+        console.log('Saude')
+        this.tituloCard = 'Saude'
+        break
+      default:
+        console.log('default')
+        this.tituloCard = 'default'
+
+    }
   }
 
 
