@@ -16,7 +16,7 @@ export class CardComponent implements OnInit {
 
   public constructor() { }
 
-  @Input() tipoCard: string = ''
+  @Input() tipoCard: string = 'teste 3'
 
   ngOnInit(): void {
     console.log('iniciado Card');
